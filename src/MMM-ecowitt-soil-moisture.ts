@@ -1,9 +1,9 @@
-import { SoilSensor } from "./types/Ecowitt";
 import { Config } from "./types/Config";
 import * as Log from "logger";
 
 import "./styles/Overview.scss";
 import { NotificationType } from "./types/NotificationTypes";
+import { SoilSensor } from "./types/Ecowitt";
 
 Module.register<Config>("MMM-ecowitt-soil-moisture", {
   defaults: {
@@ -11,7 +11,7 @@ Module.register<Config>("MMM-ecowitt-soil-moisture", {
     updateInterval: 1 * 60 * 1000,
   },
 
-  sensors: [] as SoilSensor[],
+  sensors: [],
 
   getStyles: function () {
     return ["MMM-ecowitt-soil-moisture.css"];
@@ -27,21 +27,21 @@ Module.register<Config>("MMM-ecowitt-soil-moisture", {
 
     switch (type) {
       case NotificationType.SOIL_SENSORS:
-        this.sensors = payload;
+        this.sensors = payload as unknown as SoilSensor[];
         this.updateDom();
         break;
     }
   },
 
   getTemplate: function () {
-    return "overview.njk";
+    return "./templates/overview.njk";
   },
 
   getTemplateData: function () {
-    const data = {
-      sensors: this.sensors,
-    };
+    const { sensors } = this;
 
-    return data;
+    return {
+      sensors,
+    };
   },
 });

@@ -12,18 +12,18 @@
     "postinstall": "npm run build"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.5",
-    "@types/magicmirror-module": "^2.16.5",
-    "rollup": "^4.21.2",
-    "rollup-plugin-scss": "^4.0.0",
-    "tslib": "^2.7.0",
-    "typescript": "^5.5.4"
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-typescript": "11.1.6",
+    "rollup-plugin-scss": "4.0.0",
+    "@types/magicmirror-module": "2.16.5",
+    "rollup": "4.21.2",
+    "tslib": "2.7.0",
+    "typescript": "5.5.4",
+    "@rollup/plugin-json": "6.1.0",
+    "sass": "1.78.0"
   },
   "dependencies": {
-    "@rollup/plugin-json": "^6.1.0",
-    "axios": "^1.7.7",
-    "sass": "^1.78.0"
+    "axios": "1.7.7"
   }
 }

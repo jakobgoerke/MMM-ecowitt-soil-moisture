@@ -1,6 +1,6 @@
-export interface Config {
+interface Config {
   url: string;
   updateInterval: number;
 }
 
-export default Config;
+export { Config };

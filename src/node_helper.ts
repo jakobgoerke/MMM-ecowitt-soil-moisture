@@ -1,7 +1,7 @@
 import * as Log from "logger";
 import * as NodeHelper from "node_helper";
 import { NotificationType } from "./types/NotificationTypes";
-import Config from "./types/Config";
+import { Config } from "./types/Config";
 import { EcowittClient } from "./client/EcowittClient";
 import { LiveDataResponse } from "./types/Ecowitt";
 
