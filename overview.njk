@@ -1,0 +1,13 @@
+<header class="module-header">
+  Soil moisture
+</header>
+<div class="overview wrapper">
+  {% for sensor in sensors %}
+    <div class="sensor">
+      <div>{{ sensor.name }}</div>
+      <div class="bright">{{ sensor.humidity }}</div>
+    </div>
+  {% else %}
+    <div class="small dimmed">No sensor data.</div>
+  {% endfor %}
+</div>

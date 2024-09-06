@@ -1,0 +1,29 @@
+{
+  "name": "mmm-ecowitt-soil-moisture",
+  "version": "1.0.0",
+  "main": "MMM-ecowitt-soil-moisture.js",
+  "repository": "git@github.com:jakobgoerke/MMM-ecowitt-soil-moisture.git",
+  "author": "revdev <mail@revdev.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --sourcemap=inline",
+    "watch": "npm run dev -- --watch",
+    "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/magicmirror-module": "^2.16.5",
+    "rollup": "^4.21.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "axios": "^1.7.7",
+    "sass": "^1.78.0"
+  }
+}
