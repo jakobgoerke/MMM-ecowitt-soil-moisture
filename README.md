@@ -1,6 +1,6 @@
 # Ecowitt Soil Moisture
 
-A [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) Module to show [soil moisture meter](https://shop.ecowitt.com/en-de/products/wh51) sensor data via [ecowitt wifi gateway](https://shop.ecowitt.com/en-de/products/gw1100).
+A [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) Module to display your hungry plants using [soil moisture meter](https://shop.ecowitt.com/en-de/products/wh51) via [ecowitt wifi gateway](https://shop.ecowitt.com/en-de/products/gw1100).
 
 ## Installation
 

@@ -40,6 +40,8 @@ Module.register<Config>("MMM-ecowitt-soil-moisture", {
   getTemplateData: function () {
     const { sensors } = this;
 
+    sensors.sort((a, b) => parseInt(a.humidity) - parseInt(b.humidity));
+
     return {
       sensors,
     };
