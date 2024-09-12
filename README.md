@@ -1,5 +1,7 @@
 # Ecowitt Soil Moisture
 
+![preview](https://github.com/jakobgoerke/MMM-ecowitt-soil-moisture/blob/main/_readme/mmm.jpg?raw=true)
+
 A [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) Module to display your hungry plants using [soil moisture meter](https://shop.ecowitt.com/en-de/products/wh51) via [ecowitt wifi gateway](https://shop.ecowitt.com/en-de/products/gw1100).
 
 ## Installation
@@ -13,4 +15,4 @@ A [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) Module to displ
 | Property         | Type     | Required | Default | Description                      |
 | ---------------- | -------- | :------: | ------- | -------------------------------- |
 | `url`            | `string` |    ✔︎    |         | Url of your ecowitt wifi gateway |
-| `updateInterval` | `number` |    ✔︎    | 60000   | Interval to fetch data in ms.    |
+| `updateInterval` | `number` |          | 60000   | Interval to fetch data in ms.    |
